@@ -90,7 +90,11 @@ body {
   font-size: 14px;
 }
 
-.nav-item a {
+.nav-button{
+  display: none;
+}
+
+.nav-link {
   color: black;
 }
 
@@ -130,10 +134,18 @@ body {
 .services-row {
   display: flex;
   column-gap: 30px;
+  flex-wrap:wrap;
+  row-gap: 60px;
 }
 
 .service-card-image {
   margin-bottom: 30px;
+}
+
+.service-card{
+  flex: 1 1 0;
+  min-width: 315px;
+
 }
 
 .service-card-tittle {

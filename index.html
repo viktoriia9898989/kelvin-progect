@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -15,7 +16,7 @@
             <div class="header-nav">
 
                 <a href="#!" class="logo">Kelvin</a>
-                <nav class="nav">
+                <nav id="nav" class="nav">
                     <ul class="nav-list">
                          <li class="nav-item"><a href="#!" class="nav-link active">Home</a></li>
                          <li class="nav-item"><a href="#!" class="nav-link">Works</a></li>
@@ -23,19 +24,26 @@
                          <li class="nav-item"><a href="#!" class="nav-link">About</a></li>
                          <li class="nav-item"><a href="#!" class="nav-link">Contact</a></li>
                     </ul>
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-image" src="./img/icons/nav-open.svg" alt="">
+                    </button>
                 </nav>
             </div>
 
             <!--Header Nav-->
             <div class="header-row">
-                <div class="header-content">
+                <div class="header-content" data-aos="fade-up">
                     <h1 class="header-heading">
-                        Kelvin Kramer <br> Designer & Developer
+                        Kelvin Kramer <br> <span>Designer & Developer</span>
                     </h1>
                     <p>I am a portrait ,fashion and lifestyle photographer living in New York city. During my thirteen year tenure here.</p>
                 </div>
-                <div class="header-image">
-                    <img src="./img/header/hero.png" alt="">
+                <div class="header-image" data-aos="fade-left" >
+
+                    <picture>
+                        <source media="(max-width: 799px)" srcset= "./img/header/hero-mobile.png">
+                        <img src="./img/header/hero.png" alt="">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -45,19 +53,19 @@
         <div class="container">
             <div class="services-row">
 
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-down">
                     <img class="service-card-image" src="./img/services/01.svg" alt="">
                     <h3 class="service-card-tittle">UI/UX Design</h3>
                     <p>Our design is tramslated into coprehensive digital environments built on latest development standart.</p>
                 </div>
 
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-down">
                     <img class="service-card-image" src="./img/services/02.svg" alt="">
                     <h3 class="service-card-tittle">Development</h3>
                     <p>Our design is tramslated into coprehensive digital environments built on latest development standart.</p>
                 </div>
 
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-down">
                     <img class="service-card-image" src="./img/services/03.svg" alt="">
                     <h3 class="service-card-tittle">Sofrware Testing</h3>
                     <p>Our design is tramslated into coprehensive digital environments built on latest development standart.</p>
@@ -74,19 +82,19 @@
             </div>
             
 
-            <div class="project">
+            <div class="project" data-aos="flip-up">
                 <img src="./img/portfolio/01.jpg" alt="One fashion" class="project-image">
                 <h3 class="project-tittle"><a href="#!">One fashion store home page</a></h3>
             </div>
 
             
-            <div class="project">
+            <div class="project" data-aos="flip-up">
                 <img src="./img/portfolio/02.jpg" alt="Reebok Store" class="project-image">
                 <h3 class="project-tittle"><a href="#!">Reebok Store - Consept</a></h3>
             </div>
 
             
-            <div class="project">
+            <div class="project" data-aos="flip-up">
                 <img src="./img/portfolio/03.jpg" alt="Braun Landing Page" class="project-image">
                 <h3 class="project-tittle"><a href="#!">Braun Landing Page - Consept</a></h3>
             </div>
@@ -100,17 +108,17 @@
 
             </div>
 
-            <div class="contacts-content">
+            <div class="contacts-content" data-aos="fade-down">
                 <p>Want to know more or just chat? <br> You are welcome!</p>
 
             </div>
 
-            <div class="contacts-button">
+            <div class="contacts-button" data-aos="fade-down">
                 <a href="#!" class="button">Send message</a>
 
             </div>
 
-            <div class="contacts-social">
+            <div class="contacts-social" data-aos="zoom-in">
                 <a href="#!"><img src="./img/socials/LinkedIn.svg" alt=""></a>
                 <a href="#!"><img src="./img/socials/Instargam.svg" alt=""></a>
                 <a href="#!"><img src="./img/socials/Behance.svg" alt=""></a>
@@ -118,7 +126,7 @@
 
             </div>
 
-            <div class="contacts-footer">
+            <div class="contacts-footer" data-aos="fade-up">
                 <p>Like me on <br> LinkedIn , Instagram , Dribble</p>
             </div>
 
@@ -129,7 +137,7 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="./js/main.js"></script>
 </body>
